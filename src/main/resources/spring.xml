@@ -128,10 +128,11 @@
 	<bean id="orderDao" class="com.nju.data.dao.impl.OrderDaoImpl"></bean>
 	<bean id="staffDao" class="com.nju.data.dao.impl.StaffDaoImpl"></bean>
 	<bean id="goodsDao" class="com.nju.data.dao.impl.GoodsDaoImpl"></bean>
+	<bean id="userAddressDao" class="com.nju.data.dao.impl.UserAddressDaoImpl"></bean>
 
 <!-- Service -->
 	<bean id="userService" class="com.nju.service.impl.UserServiceImpl"></bean>
-	
+	<bean id="userAddressService" class="com.nju.service.impl.UserAddressServiceImpl"></bean>
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="defaultEncoding" value="UTF-8" />

@@ -1,5 +1,7 @@
 package com.nju.data.dataobject;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GenerationType;
@@ -8,7 +10,12 @@ import javax.persistence.Table;
 import javax.persistence.GeneratedValue;
 @Entity
 @Table(name="user_addr")
-public class UserAddressDO {
+public class UserAddressDO implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private long id;
 	private String username;
 	private String street;
